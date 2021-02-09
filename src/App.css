@@ -1,11 +1,108 @@
-.App {
-  text-align: center;
+.App-Outer {
+  overflow: hidden;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.5);
+}
+.App-Inner {
+  padding-left: 8vw;
+  padding-right: 8vw;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ @media only screen and (max-width: 320px) {
+    .App {
+      padding-top: 6vh;
+      padding-right: 11.25vw;
+      padding-left: 11.25vw;
+    }
+
+    Header {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    color: #000000;
+    text-align: left;
+    padding-bottom: 8px;
+  }
+  .Header-Subtext {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+  }
 }
+
+.Header {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  color: #000000;
+  text-align: left;
+  padding-bottom: 8px;
+}
+
+.Header-Subtext {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.Slider {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-top: 60px;
+  overflow: visible;
+}
+
+.Slide {
+  width: 384px;
+  height: auto;
+  padding-right: 24px;
+}
+
+.Slide img {
+  width: 384px;
+  padding-bottom: 36px;
+}
+
+.Slide-Header {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  padding-bottom: 20px;
+}
+
+.Slide-Subheaders {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.Slide-Subheader-Normal {
+  padding-bottom: 14px;
+}
+
+button{
+  width: 136px;
+  height: 42px;
+  border: 1px solid #340D70;
+  border-radius: 4px;
+  background-color: white;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #340D70;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
