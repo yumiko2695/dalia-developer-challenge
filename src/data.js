@@ -1,11 +1,11 @@
-{
-  "data":[ {
+export const data = [ {
     "id": 0,
     "slideHeader": "What is Latana?",
     "slideSubHeaders": ["How does Latana Work?", "Why choose Latana","What does Latana cost?"],
     "img": "./slide0.png",
     "redirect": "'url'"
-  },{
+  },
+  {
     "id": 1,
     "slideHeader": "Getting Started",
     "slideSubHeaders": ["What is MRP?", "How do you gather data?", "What is a margin of error?"],
@@ -34,4 +34,4 @@
     "redirect": "url"
   }
   ]
-}
+export default data;

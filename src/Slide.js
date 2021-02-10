@@ -2,7 +2,6 @@ import './App.css';
 
 
 function Slide(props) {
-  console.log(props)
   const {id, img, slideHeader, slideSubHeaders} = props.val
 
   return (
