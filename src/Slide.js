@@ -13,7 +13,7 @@ function Slide(props) {
         <div className="Slide-Subheader-Normal">{slideSubHeaders ? slideSubHeaders[1]: <></>}</div>
         <div className="Slide-Subheader-Normal">{slideSubHeaders ? slideSubHeaders[2] :<></>}</div>
       </div>
-      <button>Learn More</button>
+      <button className="Learn-More">Learn More</button>
     </div>
   );
 }

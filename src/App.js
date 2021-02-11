@@ -2,6 +2,9 @@ import './App.css';
 import Slide from './Slide.js'
 import data from './data.js'
 import { useState } from 'react';
+import { ReactComponent as Right} from './right.svg'
+import { ReactComponent as Left} from './left.svg'
+
 
 function App() {
   const [carousel, setCarousel] = useState([0,1,2,3,4])
@@ -31,13 +34,14 @@ function App() {
             return <Slide val={data[val]} key={index}/>
         })}
       </div>
-      <div>
-        <button onClick={handleClick} name='left'>
-          left
-        </button>
-        <button onClick={handleClick} name='right'>
-          right
-        </button>
+      <div className="Slider-Button-Container">
+        <div className="Slider-Button" onClick={handleClick} name='left'>
+          <Left className='Svg'/>
+                  </div>
+        <div className="Slider-Button" onClick={handleClick} name='right'>
+        {/* <img src="./right.svg"/> */}
+        <Right className='Svg'/>
+        </div>
       </div>
     </div>
     </div>

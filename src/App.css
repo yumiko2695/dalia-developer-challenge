@@ -7,7 +7,7 @@
   padding-left: 8vw;
   padding-right: 8vw;
   padding-top: 10vw;
-  padding-bottom: 10vw;
+  padding-bottom: auto;
 }
 
  @media only screen and (max-width: 320px) {
@@ -57,12 +57,17 @@
   flex-wrap: nowrap;
   padding-top: 60px;
   overflow: visible;
+  padding-bottom: 5px;
 }
 
 .Slide {
   width: 384px;
   height: auto;
   padding-right: 24px;
+}
+
+.Slide:nth-child(4) {
+  opacity: .5;
 }
 
 .Slide img {
@@ -90,7 +95,7 @@
   padding-bottom: 14px;
 }
 
-button{
+.Learn-More{
   width: 136px;
   height: 42px;
   border: 1px solid #340D70;
@@ -99,10 +104,37 @@ button{
   font-family: 'Mulish';
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
   color: #340D70;
+  transition: .15s;
+  transition-timing-function: ease-in-out;
+}
+.Learn-More:hover{
+  border: 3px solid #340D70;
 }
 
+.Slider-Button-Container{
+  display: flex;
+  flex-direction: row;
+}
+
+.Slider-Button{
+  display: flex;
+  height: 48px;
+  width: 48px;
+  margin-right: 18px;
+  border-radius: 50%;
+  border: 1px solid #31135E;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .Slider-Button:hover{
+  background-color: #340D70;
+} */
+.Slider-Button .Svg svg path:hover{
+  fill: white;
+  z-index: 2;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
