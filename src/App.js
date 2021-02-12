@@ -8,20 +8,17 @@ import { ReactComponent as Left} from './left.svg'
 
 function App() {
   const [carousel, setCarousel] = useState([0,1,2,3,4])
-  console.log(carousel)
-  const handleClick = (event) => {
-    console.log(event.target.name)
-    if(event.target.name === 'left') {
-      let copy = [...carousel]
-      let newEnd = copy.shift()
-      copy.push(newEnd);
-      setCarousel(copy)
-    } else {
-      let copy = [...carousel]
-      let newEnd = copy.pop()
-      copy.unshift(newEnd)
-      setCarousel(copy)
-    }
+  const handleClickLeft = () => {
+    let copy = [...carousel]
+    let newEnd = copy.pop()
+    copy.unshift(newEnd)
+    setCarousel(copy);
+  }
+  const handleClickRight = () => {
+    let copy = [...carousel]
+    let newEnd = copy.shift()
+    copy.push(newEnd);
+    setCarousel(copy)
   }
 
   return (
@@ -35,12 +32,12 @@ function App() {
         })}
       </div>
       <div className="Slider-Button-Container">
-        <div className="Slider-Button" onClick={handleClick} name='left'>
-          <Left className='Svg'/>
+        <div className="Slider-Button" onClick={handleClickLeft} name='left'>
+          <Left/>
                   </div>
-        <div className="Slider-Button" onClick={handleClick} name='right'>
+        <div className="Slider-Button" onClick={handleClickRight} name='right'>
         {/* <img src="./right.svg"/> */}
-        <Right className='Svg'/>
+        <Right/>
         </div>
       </div>
     </div>

@@ -1,12 +1,10 @@
-.App-Outer {
-  overflow: hidden;
-  z-index: 2;
-  background: rgba(255, 255, 255, 0.5);
-}
+
 .App-Inner {
+  height: 100vh;
+  width: 100vw;
   padding-left: 8vw;
   padding-right: 8vw;
-  padding-top: 10vw;
+  padding-top: 10vh;
   padding-bottom: auto;
 }
 
@@ -126,13 +124,15 @@
   border: 1px solid #31135E;
   justify-content: center;
   align-items: center;
+  transition: .15s;
+  transition-timing-function: ease-in-out;
 }
 
-/* .Slider-Button:hover{
+.Slider-Button:hover{
   background-color: #340D70;
-} */
-.Slider-Button .Svg svg path:hover{
-  fill: white;
+}
+.Slider-Button:hover svg path{
+  fill: #ffffff;
   z-index: 2;
 }
 
