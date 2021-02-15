@@ -22,7 +22,6 @@ function App() {
   }
 
   return (
-    <div className="App-Outer">
     <div className="App-Inner">
       <div className='Header'>Latana Knowledge Center</div>
       <div className="Header-Subtext">Everything you need to know about the best brand tracking solution in the world.</div>
@@ -40,7 +39,6 @@ function App() {
         <Right/>
         </div>
       </div>
-    </div>
     </div>
   );
 }

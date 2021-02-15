@@ -1,35 +1,10 @@
 
 .App-Inner {
-  height: 100vh;
-  width: 100vw;
   padding-left: 8vw;
   padding-right: 8vw;
   padding-top: 10vh;
   padding-bottom: auto;
-}
-
- @media only screen and (max-width: 320px) {
-    .App {
-      padding-top: 6vh;
-      padding-right: 11.25vw;
-      padding-left: 11.25vw;
-    }
-
-    Header {
-    font-family: 'Mulish';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 34px;
-    color: #000000;
-    text-align: left;
-    padding-bottom: 8px;
-  }
-  .Header-Subtext {
-    font-family: 'Mulish';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-  }
+  overflow: hidden;
 }
 
 .Header {
@@ -55,7 +30,7 @@
   flex-wrap: nowrap;
   padding-top: 60px;
   overflow: visible;
-  padding-bottom: 5px;
+  height: min-content;
 }
 
 .Slide {
@@ -113,6 +88,7 @@
 .Slider-Button-Container{
   display: flex;
   flex-direction: row;
+  padding-top: 5vh;
 }
 
 .Slider-Button{
@@ -135,6 +111,92 @@
   fill: #ffffff;
   z-index: 2;
 }
+
+
+@media only screen and (max-width: 320px) {
+  .App-Inner {
+    padding-top: 6.33vh;
+    padding-right: 11.25vw;
+    padding-left: 11.25vw;
+    padding-bottom: auto;
+    overflow: hidden;
+    }
+    .Header {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    color: #000000;
+    text-align: left;
+    width: 100%;
+    padding-bottom: 8px;
+  }
+  .Header-Subtext {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    width: 248px;
+  }
+  .Slider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-top: 6.3vh;
+    overflow: visible;
+    height: min-content;
+  }
+  .Slide {
+    width: 248px;
+    padding-right: 2.5vh;
+    height: min-content;
+  }
+  .Slide:nth-child(2) {
+    opacity: .5;
+  }
+  .Slide img {
+    width: 248px;
+    height: auto;
+    padding-bottom: 2.5vh;
+  }
+  .Slide-Header {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    padding-bottom: 2.1vh;
+  }
+  .Slide-Subheaders {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  .Slide-Subheader-Normal {
+    padding-bottom: 14px;
+  }
+  .Learn-More{
+    width: 136px;
+    height: 42px;
+    border: 1px solid #340D70;
+    border-radius: 4px;
+    background-color: white;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    color: #340D70;
+    transition: .15s;
+    transition-timing-function: ease-in-out;
+  }
+  .Learn-More:hover{
+    border: 3px solid #340D70;
+  }
+
+
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
